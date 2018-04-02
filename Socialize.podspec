@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.dependency        'Loopy'
   s.dependency        'Facebook-iOS-SDK', '3.20.0'
 #  s.dependency        'SZOAuthConsumer'
-  s.dependency        'SZJSONKit'
+#  s.dependency        'SZJSONKit'
   s.dependency        'BlocksKit'
   s.dependency        'STTwitter', '0.1.4'
   s.resources         = 'Socialize/Resources/*.png','Socialize/Resources/*.xib','Socialize/Resources/*.plist','Socialize/Resources/*.htm'
