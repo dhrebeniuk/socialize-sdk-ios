@@ -1396,7 +1396,8 @@
 		AAEC2B1015B4DA5400C9C65A /* example-distribution.embedded.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = AAEC2B0F15B4DA5400C9C65A /* example-distribution.embedded.mobileprovision */; };
 		AAF580EE16BC99610007BE58 /* libGHUnitIOSSimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AADFBFE216B9FB7400291167 /* libGHUnitIOSSimulator.a */; };
 		AAFB0B8215E70FB10091600C /* ui_advanced.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFB0B8115E70FB10091600C /* ui_advanced.m */; };
-		CFDA70919DA7D0126E7656BB /* libPods-UnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E80A5864D3CB28BDF9D7A4AF /* libPods-UnitTests.a */; };
+		AE0ED9DBE466E91A6D4EA2F5 /* libPods-UnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E80A5864D3CB28BDF9D7A4AF /* libPods-UnitTests.a */; };
+		B80C3FA88396FDA6425534FE /* libPods-Socialize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9359F9EE95A2DC7D18D27A2 /* libPods-Socialize.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1675,14 +1676,16 @@
 		48C069921780192B004E7843 /* pinterest-snippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pinterest-snippets.h"; sourceTree = "<group>"; };
 		48C069931780192B004E7843 /* pinterest-snippets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "pinterest-snippets.m"; sourceTree = "<group>"; };
 		589776489BBA087ACE427466 /* libPods-UIIntegrationAcceptanceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIIntegrationAcceptanceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DE18FCA04FD52B82CA6C16E /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5FDD608434D1EE910705FB6E /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		84AEF7C3176339AB006DB43A /* socialize-selectnetwork-pinterest-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "socialize-selectnetwork-pinterest-icon@2x.png"; path = "Socialize/Resources/socialize-selectnetwork-pinterest-icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		84AEF7DD176341CE006DB43A /* socialize-selectnetwork-pinterest-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "socialize-selectnetwork-pinterest-icon.png"; path = "Socialize/Resources/socialize-selectnetwork-pinterest-icon.png"; sourceTree = SOURCE_ROOT; };
 		84FCF44E175E706B009AD5C1 /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
 		84FCF450175E706B009AD5C1 /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
 		893E117320F4ED5B1D377810 /* Pods-UIIntegrationAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIIntegrationAcceptanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A6AE4D180CCA447ABA0434 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9D4161F338E554C5E7B99712 /* Pods-Socialize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socialize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Socialize/Pods-Socialize.debug.xcconfig"; sourceTree = "<group>"; };
+		9D5F9A8A248E750BF0C7184C /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6F3E7F64DD065F615D641B0 /* Pods-Socialize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socialize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Socialize/Pods-Socialize.release.xcconfig"; sourceTree = "<group>"; };
+		A8E4A3E31C79768D2DE7B6F5 /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA008590158D2B1100480399 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA008594158D2B1100480399 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA008596158D2B1100480399 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2537,6 +2540,7 @@
 		AAFB0B8015E70FB10091600C /* ui_advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_advanced.h; sourceTree = "<group>"; };
 		AAFB0B8115E70FB10091600C /* ui_advanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ui_advanced.m; sourceTree = "<group>"; };
 		B10DF5AAD80546ADD5E55B5D /* Pods-UIIntegrationAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIIntegrationAcceptanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9359F9EE95A2DC7D18D27A2 /* libPods-Socialize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Socialize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80A5864D3CB28BDF9D7A4AF /* libPods-UnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2547,6 +2551,7 @@
 			files = (
 				2C7DDAE118A049490006A57A /* Foundation.framework in Frameworks */,
 				30313487239A99015C69F1C5 /* libPods.a in Frameworks */,
+				B80C3FA88396FDA6425534FE /* libPods-Socialize.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2597,6 +2602,7 @@
 				AAA7C85116B207450041DFD0 /* AdSupport.framework in Frameworks */,
 				84AEF7EB1763435C006DB43A /* Pinterest.framework in Frameworks */,
 				0B82210D5FFD722B0D866F09 /* libPods-UnitTests.a in Frameworks */,
+				AE0ED9DBE466E91A6D4EA2F5 /* libPods-UnitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2615,7 +2621,6 @@
 				AA6C63D0158F0EB0005E5632 /* CoreGraphics.framework in Frameworks */,
 				AAA7C85016B207440041DFD0 /* AdSupport.framework in Frameworks */,
 				84AEF7EA1763435B006DB43A /* Pinterest.framework in Frameworks */,
-				CFDA70919DA7D0126E7656BB /* libPods-UnitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3287,8 +3292,10 @@
 				2EFD1A64D2FFF668B452CC71 /* Pods.release.xcconfig */,
 				893E117320F4ED5B1D377810 /* Pods-UIIntegrationAcceptanceTests.debug.xcconfig */,
 				B10DF5AAD80546ADD5E55B5D /* Pods-UIIntegrationAcceptanceTests.release.xcconfig */,
-				5DE18FCA04FD52B82CA6C16E /* Pods-UnitTests.debug.xcconfig */,
-				5FDD608434D1EE910705FB6E /* Pods-UnitTests.release.xcconfig */,
+				9D4161F338E554C5E7B99712 /* Pods-Socialize.debug.xcconfig */,
+				A6F3E7F64DD065F615D641B0 /* Pods-Socialize.release.xcconfig */,
+				A8E4A3E31C79768D2DE7B6F5 /* Pods-UnitTests.debug.xcconfig */,
+				9D5F9A8A248E750BF0C7184C /* Pods-UnitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -3341,6 +3348,7 @@
 				3E481E86A18E099A7DCA8897 /* libPods.a */,
 				589776489BBA087ACE427466 /* libPods-UIIntegrationAcceptanceTests.a */,
 				E80A5864D3CB28BDF9D7A4AF /* libPods-UnitTests.a */,
+				B9359F9EE95A2DC7D18D27A2 /* libPods-Socialize.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4355,6 +4363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C7DDB1018A049490006A57A /* Build configuration list for PBXNativeTarget "Socialize" */;
 			buildPhases = (
+				B63C77FFEED37B41F469DD07 /* [CP] Check Pods Manifest.lock */,
 				DD70255B9712E1841B58083D /* Check Pods Manifest.lock */,
 				2C7DDBAD18A06CCF0006A57A /* Perform Project Substitutions */,
 				2C7DDADC18A049490006A57A /* Sources */,
@@ -4363,6 +4372,7 @@
 				2CBB667A18A15E9600A68BAC /* Resources */,
 				2CE6270C18A98D2D0070CD99 /* Headers */,
 				724006E8B05154A7361272A1 /* Copy Pods Resources */,
+				80FDBB8C31AECA8CF990A8DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4377,11 +4387,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 487047D417EEFB04008D5741 /* Build configuration list for PBXNativeTarget "UIIntegrationAcceptanceTests" */;
 			buildPhases = (
+				F10408D0FCECD94647E805AE /* [CP] Check Pods Manifest.lock */,
 				BCA746C962AC6C39BF4F92F2 /* Check Pods Manifest.lock */,
 				487047C117EEFB03008D5741 /* Sources */,
 				487047C217EEFB03008D5741 /* Frameworks */,
 				487047C317EEFB03008D5741 /* Resources */,
 				86DF1B95753444445D804AE0 /* Copy Pods Resources */,
+				224E9DDB8567F37EDE459324 /* [CP] Embed Pods Frameworks */,
+				21B5F8AA09584F73FD26BFD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4414,6 +4427,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0C6025158FC4F000F66A3B /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
+				0D3037AB8BFB5779B0B18BD2 /* [CP] Check Pods Manifest.lock */,
 				97C5CBCF41EE47EA1D53C0E9 /* Check Pods Manifest.lock */,
 				AA0C6010158FC4F000F66A3B /* Sources */,
 				AA0C6011158FC4F000F66A3B /* Frameworks */,
@@ -4421,6 +4435,8 @@
 				AACEDAB2158FE8B00024EC43 /* Run Tests (Command-line only) */,
 				AACEDAA9158FE5A30024EC43 /* Generate Coverage Report (Command-line only) */,
 				F89F32D47864450462BEB6CA /* Copy Pods Resources */,
+				B37A568DF337C7BA3FEFFE75 /* [CP] Embed Pods Frameworks */,
+				8DC1378833DD0AEB5D7D9828 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4437,13 +4453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA6C63DD158F0EB0005E5632 /* Build configuration list for PBXNativeTarget "IntegrationTests" */;
 			buildPhases = (
-				E3DB61F603ED061DAEC47911 /* Check Pods Manifest.lock */,
 				AA6C63C8158F0EB0005E5632 /* Sources */,
 				AA6C63C9158F0EB0005E5632 /* Frameworks */,
 				AA6C63CA158F0EB0005E5632 /* Resources */,
 				AA6CE2E4159057D900A4B074 /* Run Tests (Command-line only) */,
 				AA6CE2E51590592100A4B074 /* Generate Coverage (Command-line only) */,
-				E5173258CBE73D7DE7266B10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5447,6 +5461,69 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D3037AB8BFB5779B0B18BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21B5F8AA09584F73FD26BFD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests-resources.sh",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/LoopyApiInfo.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LoopyApiInfo.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		224E9DDB8567F37EDE459324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2C7DDBAD18A06CCF0006A57A /* Perform Project Substitutions */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5477,6 +5554,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		80FDBB8C31AECA8CF990A8DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Socialize/Pods-Socialize-resources.sh",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/LoopyApiInfo.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LoopyApiInfo.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Socialize/Pods-Socialize-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		86DF1B95753444445D804AE0 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5490,6 +5597,601 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIIntegrationAcceptanceTests/Pods-UIIntegrationAcceptanceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC1378833DD0AEB5D7D9828 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/FacebookLogoNoBlue76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo43x43.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo60x60.png",
+				"${PODS_ROOT}/Loopy/Loopy/Resources/TwitterLogo76x76.png",
+				"${PODS_ROOT}/Loopy/Loopy/LoopyApiInfo.plist",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-hover-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-hover-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-hover.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-hover@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-black@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-hover-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-hover-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-hover.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-hover@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-button-red@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-comments.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-comments@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-like.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-like@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-liked.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-liked@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-share.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-share@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-views.png",
+				"${PODS_ROOT}/../Socialize/Resources/action-bar-icon-views@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/background_brushed_metal@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/background_plain@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-bg-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-bg-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-header-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-header-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-header-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-header-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-sm-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/comment-sm-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/comments-cell-bg-borders.png",
+				"${PODS_ROOT}/../Socialize/Resources/comments-cell-bg-borders@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/FacebookLogoNoBlue43x43.png",
+				"${PODS_ROOT}/../Socialize/Resources/FacebookLogoNoBlue60x60.png",
+				"${PODS_ROOT}/../Socialize/Resources/FacebookLogoNoBlue76x76.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-call-out-arrow.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-call-out-arrow@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment-highlighted.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment-highlighted@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment-normal.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment-normal@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-comment@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-facebook.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-facebook@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like-highlighted.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like-highlighted@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like-normal.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like-normal@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-like@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-share.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-share@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-twitter.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-cell-icon-twitter@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-back-entry-x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-back-entry-x@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-back-section-x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-back-section-x@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-btn-link-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-btn-link-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-btn-link.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-btn-link@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-categ_arrow.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-categ_arrow@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-ico-chat.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-ico-chat@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-ico-location.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-ico-location@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-profile-pic-small.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-profile-pic-small@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-top-back.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-activity-details-top-back@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-authenticate-badge-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-authenticate-badge-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-disabled-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-disabled-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-disabled-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-disabled-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-enabled-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-enabled-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-enabled-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-facebook-enabled-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-top-shadow-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-top-shadow-background@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-disabled-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-disabled-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-disabled-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-disabled-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-enabled-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-enabled-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-enabled-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-twitter-enabled-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-user-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-user-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-user-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-authorize-user-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-arrow.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-arrow@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-default-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-default-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-default.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-default@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-mask-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image-mask-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-image@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-selected-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-cell-selected-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-checkmark.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-checkmark@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-background-text-input-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-background-text-input-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-background-text-input.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-background-text-input@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-button-active.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-button-active@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-button.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-button@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-detail-bottom-shadow-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-detail-bottom-shadow-background@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-details-icon-geo-disabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-details-icon-geo-disabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-details-icon-geo-enabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-details-icon-geo-enabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-facebook-disabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-facebook-disabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-facebook-enabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-facebook-enabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-list-view-location-pin-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-list-view-location-pin-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-bar-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-bar-background@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-disabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-disabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-enabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-location-enabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-notification-disabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-notification-disabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-notification-enabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-notification-enabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-top-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-twitter-disabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-twitter-disabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-twitter-enabled.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-twitter-enabled@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-user-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-user-background@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-comment-user-only-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-notification-button-highlighted.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-notification-button-highlighted@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-notification-button-normal.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-notification-button-normal@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-subcribe-notification-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-iphone-subcribe-notification-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-location-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back-pressed.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back-pressed@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-back@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-highlighted.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-highlighted@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-inactive.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-inactive@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-normal.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-blue-bg-normal@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-dark-active.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-dark-active@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-dark.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-dark@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-green-active.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-green-active@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-green.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-green@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-red-active.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-red-active@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-red.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-navbar-button-red@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-nocomments-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-nocomments-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-notifications-bottom-shadow-background.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-notifications-bottom-shadow-background@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-bg-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-bg-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-default-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-default-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-default.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-profileimage-large-default@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-sectionheader-bg-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-sectionheader-bg-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-sectionheader-bg.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-sectionheader-bg@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-continue-btn.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-continue-btn@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-email-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-email-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-email-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-email-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-dis-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-dis-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-dis-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-dis-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-facebook-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-illustration.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-illustration@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-pinterest-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-pinterest-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-pinterest-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-pinterest-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-SMS-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-SMS-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-SMS-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-SMS-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-table-back.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-table-back@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-dis-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-dis-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-dis-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-dis-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-icon-ios7.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-icon-ios7@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-twitter-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-whatsapp-icon.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize-selectnetwork-whatsapp-icon@2x.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize_logo.png",
+				"${PODS_ROOT}/../Socialize/Resources/socialize_twitter_load.png",
+				"${PODS_ROOT}/../Socialize/Resources/TwitterLogo43x43.png",
+				"${PODS_ROOT}/../Socialize/Resources/TwitterLogo60x60.png",
+				"${PODS_ROOT}/../Socialize/Resources/TwitterLogo76x76.png",
+				"${PODS_ROOT}/../Socialize/Resources/commentsNavBarLeftItemView.xib",
+				"${PODS_ROOT}/../Socialize/Resources/CommentsTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/CommentsTableViewCellIOS7.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SampleEntityLoader.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeActivityDetailsViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeActivityTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeActivityTableViewCellIOS7.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeActivityViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeAuthInfoTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeAuthTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeCommentDetailsViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeComposeMessageViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeDummyViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeEditValueTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeNotificationToggleBubbleContentView.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeProfileEditTableViewCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeProfileEditTableViewImageCell.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeProfileEditValueViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeRichPushNotificationViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeTableViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SZBaseShareViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/SZStatusImageLabelView.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZCommentsListViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZComposeCommentViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZLinkDialogViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZTwitterLinkViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZUserProfileViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/_SZUserSettingsViewController.xib",
+				"${PODS_ROOT}/../Socialize/Resources/LoopyApiInfo.plist",
+				"${PODS_ROOT}/../Socialize/Resources/SocializeConfigurationInfo.plist",
+				"${PODS_ROOT}/../Socialize/Resources/comment_template_clear.htm",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookLogoNoBlue76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo43x43.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo60x60.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterLogo76x76.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LoopyApiInfo.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-hover-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-hover-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-hover.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-hover@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-black@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-hover-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-hover-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-hover.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-hover@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-button-red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-comments.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-comments@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-like.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-like@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-liked.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-liked@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-share.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-share@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-views.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/action-bar-icon-views@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/background_brushed_metal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/background_plain@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-bg-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-bg-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-header-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-header-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-header-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-header-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-sm-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment-sm-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comments-cell-bg-borders.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comments-cell-bg-borders@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-call-out-arrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-call-out-arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment-normal.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment-normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-comment@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-facebook.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-facebook@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like-normal.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like-normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-like@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-share.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-share@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-twitter.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-cell-icon-twitter@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-back-entry-x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-back-entry-x@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-back-section-x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-back-section-x@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-btn-link-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-btn-link-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-btn-link.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-btn-link@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-categ_arrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-categ_arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-ico-chat.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-ico-chat@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-ico-location.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-ico-location@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-profile-pic-small.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-profile-pic-small@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-top-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-activity-details-top-back@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-authenticate-badge-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-authenticate-badge-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-disabled-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-disabled-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-disabled-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-disabled-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-enabled-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-enabled-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-enabled-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-facebook-enabled-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-top-shadow-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-top-shadow-background@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-disabled-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-disabled-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-disabled-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-disabled-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-enabled-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-enabled-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-enabled-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-twitter-enabled-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-user-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-user-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-user-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-authorize-user-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-arrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-default-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-default-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-default.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-default@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-mask-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image-mask-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-image@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-selected-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-cell-selected-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-checkmark.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-checkmark@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-background-text-input-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-background-text-input-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-background-text-input.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-background-text-input@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-button-active.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-button-active@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-button.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-button@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-detail-bottom-shadow-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-detail-bottom-shadow-background@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-details-icon-geo-disabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-details-icon-geo-disabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-details-icon-geo-enabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-details-icon-geo-enabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-facebook-disabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-facebook-disabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-facebook-enabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-facebook-enabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-list-view-location-pin-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-list-view-location-pin-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-bar-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-bar-background@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-disabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-disabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-enabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-location-enabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-notification-disabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-notification-disabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-notification-enabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-notification-enabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-top-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-twitter-disabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-twitter-disabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-twitter-enabled.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-twitter-enabled@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-user-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-user-background@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-comment-user-only-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-notification-button-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-notification-button-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-notification-button-normal.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-notification-button-normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-subcribe-notification-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-iphone-subcribe-notification-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-location-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back-pressed.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back-pressed@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-back@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-inactive.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-inactive@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-normal.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-blue-bg-normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-dark-active.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-dark-active@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-dark.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-dark@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-green-active.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-green-active@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-green.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-green@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-red-active.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-red-active@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-red.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-navbar-button-red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-nocomments-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-nocomments-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-notifications-bottom-shadow-background.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-notifications-bottom-shadow-background@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-bg-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-bg-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-default-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-default-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-default.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-profileimage-large-default@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-sectionheader-bg-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-sectionheader-bg-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-sectionheader-bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-sectionheader-bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-continue-btn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-continue-btn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-email-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-email-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-email-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-email-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-dis-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-dis-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-dis-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-dis-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-facebook-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-illustration.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-illustration@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-pinterest-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-pinterest-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-pinterest-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-pinterest-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-SMS-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-SMS-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-SMS-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-SMS-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-table-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-table-back@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-dis-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-dis-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-dis-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-dis-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-icon-ios7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-icon-ios7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-twitter-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-whatsapp-icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize-selectnetwork-whatsapp-icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize_logo.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socialize_twitter_load.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/commentsNavBarLeftItemView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommentsTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommentsTableViewCellIOS7.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SampleEntityLoader.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeActivityDetailsViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeActivityTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeActivityTableViewCellIOS7.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeActivityViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeAuthInfoTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeAuthTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeCommentDetailsViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeComposeMessageViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeDummyViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeEditValueTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeNotificationToggleBubbleContentView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeProfileEditTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeProfileEditTableViewImageCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeProfileEditValueViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeRichPushNotificationViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeTableViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SZBaseShareViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SZStatusImageLabelView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZCommentsListViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZComposeCommentViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZLinkDialogViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZTwitterLinkViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZUserProfileViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/_SZUserSettingsViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocializeConfigurationInfo.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/comment_template_clear.htm",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97C5CBCF41EE47EA1D53C0E9 /* Check Pods Manifest.lock */ = {
@@ -5597,6 +6299,39 @@
 			shellScript = "./Scripts/run-headless-simulator.sh";
 			showEnvVarsInLog = 0;
 		};
+		B37A568DF337C7BA3FEFFE75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63C77FFEED37B41F469DD07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Socialize-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BCA746C962AC6C39BF4F92F2 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5627,34 +6362,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E3DB61F603ED061DAEC47911 /* Check Pods Manifest.lock */ = {
+		F10408D0FCECD94647E805AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIIntegrationAcceptanceTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E5173258CBE73D7DE7266B10 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F89F32D47864450462BEB6CA /* Copy Pods Resources */ = {
@@ -6124,7 +6847,7 @@
 /* Begin XCBuildConfiguration section */
 		2C7DDAFC18A049490006A57A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A6AE4D180CCA447ABA0434 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9D4161F338E554C5E7B99712 /* Pods-Socialize.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -6169,7 +6892,7 @@
 		};
 		2C7DDAFD18A049490006A57A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EFD1A64D2FFF668B452CC71 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A6F3E7F64DD065F615D641B0 /* Pods-Socialize.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -6433,7 +7156,7 @@
 		};
 		AA0C6026158FC4F000F66A3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DE18FCA04FD52B82CA6C16E /* Pods-UnitTests.debug.xcconfig */;
+			baseConfigurationReference = A8E4A3E31C79768D2DE7B6F5 /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
@@ -6473,7 +7196,7 @@
 		};
 		AA0C6027158FC4F000F66A3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDD608434D1EE910705FB6E /* Pods-UnitTests.release.xcconfig */;
+			baseConfigurationReference = 9D5F9A8A248E750BF0C7184C /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
@@ -6513,7 +7236,6 @@
 		};
 		AA6C63DE158F0EB0005E5632 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DE18FCA04FD52B82CA6C16E /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6545,7 +7267,6 @@
 		};
 		AA6C63DF158F0EB0005E5632 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDD608434D1EE910705FB6E /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

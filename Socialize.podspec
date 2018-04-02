@@ -10,11 +10,12 @@ Pod::Spec.new do |s|
   s.author            = { "David Jedeikin" => "djedeikin@sharethis.com" }
   s.source            = { :git => "https://github.com/socialize/socialize-sdk-ios.git", :tag => "3.1.3" }
   s.dependency        'Loopy'
-  s.dependency        'Facebook-iOS-SDK', '4.10.0'
+#  s.dependency        'Facebook-iOS-SDK', '4.10.0'
 #  s.dependency        'SZOAuthConsumer'
 #  s.dependency        'SZJSONKit'
   s.dependency        'BlocksKit'
-  s.dependency        'STTwitter', '0.1.4'
+  s.dependency        'STTwitter', '0.2.6'
+  s.dependency        'Bolts', '1.8.4'
   s.resources         = 'Socialize/Resources/*.png','Socialize/Resources/*.xib','Socialize/Resources/*.plist','Socialize/Resources/*.htm'
   s.subspec 'no-arc' do |ss1|
     ss1.source_files = 'Socialize-noarc/**/*.{h,m}'
