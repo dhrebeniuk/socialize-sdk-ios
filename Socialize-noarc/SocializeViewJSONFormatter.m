@@ -7,7 +7,6 @@
 //
 
 #import "SocializeViewJSONFormatter.h"
-#import <SZJSONKit/JSONKit.h>
 #import "SocializeObjectFactory.h"
 #import "SocializeView.h"
 

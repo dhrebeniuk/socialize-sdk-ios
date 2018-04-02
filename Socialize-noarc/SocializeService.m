@@ -26,7 +26,6 @@
  */
 
 #import "SocializeService.h"
-#import <SZJSONKit/JSONKit.h>
 #import "SocializeError.h"
 #import "_Socialize.h"
 #import "socialize_globals.h"
@@ -261,10 +260,7 @@
         [self invokeAppropriateCallback:request objectList:nil errorList:nil];
     
     else if(request.expectedJSONFormat == SocializeDictionaryWithListAndErrors){
-        
-        // if it is the response form {errors:"",items:""}
-        JSONDecoder *jsonKitDecoder = [JSONDecoder decoder];
-        id jsonObject = [jsonKitDecoder objectWithData:data];
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         if (![jsonObject isKindOfClass:[NSDictionary class]])
         {
             // the return object was not what was supposed to be, soo erroring out.

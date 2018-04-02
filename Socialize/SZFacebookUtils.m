@@ -12,7 +12,6 @@
 #import "_Socialize.h"
 #import "SocializeFacebookInterface.h"
 #import "SDKHelpers.h"
-#import <FacebookSDK/FBErrorUtility.h>
 
 @implementation SZFacebookUtils
 
@@ -45,7 +44,7 @@
 }
 
 + (NSArray*)requiredPermissions {
-    return [NSArray arrayWithObjects:@"public_profile", @"publish_actions", nil];
+    return [NSArray arrayWithObjects:/*@"public_profile",*/ @"publish_actions", nil];
 }
 
 + (BOOL)isAvailable {
@@ -79,7 +78,7 @@
     [[SocializeFacebookAuthHandler sharedFacebookAuthHandler] cancelAuthentication];
 }
 
-+ (void)linkWithOptions:(SZFacebookLinkOptions*)options success:(void(^)(id<SZFullUser>))success foreground:(void(^)())foreground failure:(void(^)(NSError *error))failure {
++ (void)linkWithOptions:(SZFacebookLinkOptions*)options fromViewController:(UIViewController *)fromViewController success:(void(^)(id<SZFullUser>))success foreground:(void(^)())foreground failure:(void(^)(NSError *error))failure {
     if (options == nil) {
         options = [SZFacebookLinkOptions defaultOptions];
     }
@@ -92,6 +91,7 @@
      authenticateWithAppId:facebookAppId
      urlSchemeSuffix:urlSchemeSuffix
      permissions:permissions
+	 fromViewController:fromViewController
      success:^(NSString *accessToken, NSDate *expirationDate) {
          BLOCK_CALL(options.willSendLinkRequestToSocializeBlock);
          [self linkWithAccessToken:accessToken expirationDate:expirationDate success:^(id<SZFullUser> user) {
@@ -132,11 +132,11 @@
 }
 
 + (NSString*)userMessageForError:(NSError*)error{
-    return [FBErrorUtility userMessageForError:error];
+    return error.localizedDescription;
 }
 
 + (NSString*)userTitleForError:(NSError*)error{
-    return [FBErrorUtility userTitleForError:error];
+    return error.localizedDescription;
 }
 
 

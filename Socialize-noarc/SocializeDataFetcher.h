@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <OAuthConsumer/OAuthConsumer.h>
 
-@interface SocializeDataFetcher : OAAsynchronousDataFetcher {
+@interface SocializeDataFetcher : OADataFetcher {
     NSArray        *_trustedHosts;
 }
 

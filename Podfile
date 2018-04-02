@@ -1,12 +1,13 @@
 source 'https://github.com/socialize/SocializeCocoaPods.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '7.0'
+platform :ios, '9.0'
 inhibit_all_warnings!
 
 pod 'Loopy', '1.1.3'
 
-#pod 'Facebook-iOS-SDK', '4.10.0'
+pod  'Facebook-iOS-SDK', :path => "/Users/alocorn/Documents/Projects/CustomPods/facebook-ios-sdk"
+
 pod 'Bolts', '1.8.4'
 pod 'BlocksKit'
 pod 'SZOAuthConsumer', :podspec => 'https://raw.github.com/socialize/OAuthConsumer/master/SZOAuthConsumer.podspec'
@@ -23,7 +24,7 @@ target 'UIIntegrationAcceptanceTests' do
 end
 
 target 'UnitTests' do
-  pod 'Socialize', :path => './Socialize.podspec'
+  pod 'Socialize', :path => './'
 end
 
 post_install do | installer |

@@ -17,7 +17,6 @@
 #import "SDKHelpers.h"
 #import "socialize_globals.h"
 #import "SZLocationUtils.h"
-#import <SZJSONKit/JSONKit.h>
 #import "SZEventUtils.h"
 #import "SZPinterestUtils.h"
 #import "SZWhatsAppUtils.h"
@@ -242,7 +241,7 @@ static NSInteger kFacebookLinkAlertTag = 1001;
             [weakSelf syncInterfaceWithThirdPartyState];
         }
         else {
-            [SZFacebookUtils linkWithOptions:nil success:^(id<SZFullUser> fullUser) {
+			[SZFacebookUtils linkWithOptions:nil fromViewController:self success:^(id<SZFullUser> fullUser) {
                 // Successfully linked
                 [weakSelf syncInterfaceWithThirdPartyState];
             } foreground:^{

@@ -9,7 +9,6 @@
 #import "SZTwitterImageRequest.h"
 #import "SZTwitterUtils.h"
 #import "NSError+Socialize.h"
-#import <SZJSONKit/JSONKit.h>
 
 @implementation SZTwitterImageRequest
 
@@ -74,23 +73,13 @@
 
     dispatch_async(dispatch_get_main_queue(), ^{
         NSData *data = (NSData *)[self.params objectForKey:@"media[]"];
-        NSString *statusUpdate = (NSString *)[self.params objectForKey:@"status"];
-        
-        [self.twitter postStatusUpdate:statusUpdate
-                        mediaDataArray:@[data]
-                     possiblySensitive:nil
-                     inReplyToStatusID:nil
-                              latitude:nil
-                             longitude:nil
-                               placeID:nil
-                    displayCoordinates:nil
-                   uploadProgressBlock:nil
-                          successBlock:^(NSDictionary *status) {
-                              BLOCK_CALL_1(self.successBlock, status);
-                          }
-                            errorBlock:^(NSError *error) {
-                                BLOCK_CALL_1(self.failureBlock, error);
-                            }];
+		NSString *statusUpdate = (NSString *)[self.params objectForKey:@"status"];
+
+		[self.twitter deprecated_postStatusesUpdate:statusUpdate mediaDataArray:@[data] possiblySensitive:nil inReplyToStatusID:nil latitude:nil longitude:nil placeID:nil displayCoordinates:nil uploadProgressBlock:nil successBlock:^(NSDictionary *status) {
+			BLOCK_CALL_1(self.successBlock, status);
+		} errorBlock:^(NSError *error) {
+			BLOCK_CALL_1(self.failureBlock, error);
+		}];
     });
 }
 

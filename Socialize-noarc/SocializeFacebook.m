@@ -8,8 +8,7 @@
 
 #import "SocializeFacebook.h"
 #import "SocializeFBSessionManualTokenCachingStrategy.h"
-#import <FacebookSDK/FBError.h>
-#import <FacebookSDK/FBRequest.h>
+
 
 // If the last time we extended the access token was more than 24 hours ago
 // we try to refresh the access token again.
@@ -29,7 +28,8 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
 // private properties
 @property (nonatomic, copy) NSString *appId;
 // session and tokenCaching object implement login logic and token state in Facebook class
-@property (nonatomic, readwrite, retain) FBSession *session;
+//@property (nonatomic, readwrite, retain) FBSession *session;
+@property (nonatomic, readwrite, retain) FBSDKLoginManager *loginManager;
 @property (nonatomic) BOOL hasUpdatedAccessToken;
 @property (nonatomic, retain) SocializeFBSessionManualTokenCachingStrategy *tokenCaching;
 
@@ -43,7 +43,7 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
     NSString *_appId;
     NSString *_urlSchemeSuffix;
     BOOL _isExtendingAccessToken;
-    FBRequest *_requestExtendingAccessToken;
+    FBSDKGraphRequest *_requestExtendingAccessToken;
     NSDate *_lastAccessTokenUpdate;
 }
 
@@ -102,13 +102,13 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
  * Override NSObject : free the space
  */
 - (void)dealloc {
-    [_session release];
+//    [_session release];
     // remove KVOs for tokenCaching
     [self.tokenCaching removeObserver:self forKeyPath:FBaccessTokenPropertyName context:tokenContext];
     [self.tokenCaching removeObserver:self forKeyPath:FBexpirationDatePropertyName context:tokenContext];
     [_tokenCaching release];
 
-    for (FBRequest *_request in _requests) {
+    for (FBSDKGraphRequest *_request in _requests) {
         [_request removeObserver:self forKeyPath:requestFinishedKeyPath];
     }
     [_lastAccessTokenUpdate release];
@@ -143,7 +143,7 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
 }
 
 - (void)invalidateSession {
-    [self.session close];
+//    [self.session close];
     [self.tokenCaching clearToken];
 }
 
@@ -179,42 +179,39 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
  *            Callback interface for notifying the calling application when
  *            the user has logged in.
  */
-- (void)authorize:(NSArray *)permissions {
-    
+- (void)authorize:(NSArray *)permissions fromViewController:(UIViewController *)fromViewController {
+	
+	[self.loginManager logOut];
+	
+	self.loginManager = [[FBSDKLoginManager alloc] init];
     // if we already have a session, git rid of it
-    [self.session close];
-    self.session = nil;
-    [self.tokenCaching clearToken];
+//    [self.session close];
+//    self.session = nil;
+//    [self.tokenCaching clearToken];
 
-    self.session = [[[FBSession alloc] initWithAppID:_appId
-                                         permissions:permissions
-                                     urlSchemeSuffix:_urlSchemeSuffix
-                                  tokenCacheStrategy:self.tokenCaching]
-                    autorelease];
-    
-    [self.session openWithCompletionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
-        switch (status) {
-            case FBSessionStateOpen:
-                // call the legacy session delegate
-                [self fbDialogLogin:session.accessTokenData.accessToken expirationDate:session.accessTokenData.expirationDate params:nil];
-                break;
-            case FBSessionStateClosedLoginFailed:
-            { // prefer to keep decls near to their use
-                // unpack the error code and reason in order to compute cancel bool
-                NSString *errorCode = [[error userInfo] objectForKey:FBErrorLoginFailedOriginalErrorCode];
-                NSString *errorReason = [[error userInfo] objectForKey:FBErrorLoginFailedReason];
-                BOOL userDidCancel = !errorCode && (!errorReason ||
-                                                    [errorReason isEqualToString:FBErrorLoginFailedReasonInlineCancelledValue]);
+//    self.session = [[[FBSession alloc] initWithAppID:_appId
+//                                         permissions:permissions
+//                                     urlSchemeSuffix:_urlSchemeSuffix
+//                                  tokenCacheStrategy:self.tokenCaching]
+//                    autorelease];
+	
+	
+	[self.loginManager logInWithPublishPermissions:permissions fromViewController:fromViewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+		if (error == nil) {
+			[self fbDialogLogin:result.token expirationDate:result.token.expirationDate params:nil];
 
-                // call the legacy session delegate
-                [self fbDialogNotLogin:userDidCancel];
-            }
-                break;
-                // presently extension, log-out and invalidation are being implemented in the Facebook class
-            default:
-                break; // so we do nothing in response to those state transitions
-        }
-    }];
+		}
+		else {
+//			NSString *errorCode = [[error userInfo] objectForKey:FBErrorLoginFailedOriginalErrorCode];
+//			NSString *errorReason = [[error userInfo] objectForKey:FBErrorLoginFailedReason];
+//			BOOL userDidCancel = !errorCode && (!errorReason ||
+//												[errorReason isEqualToString:FBErrorLoginFailedReasonInlineCancelledValue]);
+			
+			// call the legacy session delegate
+			[self fbDialogNotLogin:YES];
+		}
+		
+	}];
 }
 
 - (NSString *)accessToken {
@@ -236,7 +233,8 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
 }
 
 - (BOOL)handleOpenURL:(NSURL *)url {
-    return [self.session handleOpenURL:url];
+	return false;
+//    return [self.session handleOpenURL:url];
 }
 
 - (void)extendAccessToken {
@@ -281,12 +279,12 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
 #pragma mark - FBRequestDelegate Methods
 // These delegate methods are only called for requests that extendAccessToken initiated
 
-- (void)request:(FBRequest *)request didFailWithError:(NSError *)error {
+- (void)request:(FBSDKGraphRequest *)request didFailWithError:(NSError *)error {
     _isExtendingAccessToken = NO;
     _requestExtendingAccessToken = nil;
 }
 
-- (void)request:(FBRequest *)request didLoad:(id)result {
+- (void)request:(FBSDKGraphRequest *)request didLoad:(id)result {
     _isExtendingAccessToken = NO;
     _requestExtendingAccessToken = nil;
     NSString *accessToken = [result objectForKey:@"access_token"];
@@ -314,13 +312,13 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
     }
 }
 
-- (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data {
+- (void)request:(FBSDKGraphRequest *)request didLoadRawResponse:(NSData *)data {
 }
 
-- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response {
+- (void)request:(FBSDKGraphRequest *)request didReceiveResponse:(NSURLResponse *)response {
 }
 
-- (void)requestLoading:(FBRequest *)request {
+- (void)requestLoading:(FBSDKGraphRequest *)request {
 }
 
 /**
@@ -342,10 +340,10 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
  * @param delegate
  *            Callback interface for notifying the calling application when
  *            the request has received response
- * @return FBRequest
- *            Returns a pointer to the FBRequest object.
+ * @return FBSDKGraphRequest
+ *            Returns a pointer to the FBSDKGraphRequest object.
  */
-- (FBRequest *)requestWithGraphPath:(NSString *)graphPath
+- (FBSDKGraphRequest *)requestWithGraphPath:(NSString *)graphPath
                           andParams:(NSMutableDictionary *)params
                         andDelegate:(id<SocializeFBRequestDelegate>)delegate {
     
@@ -381,22 +379,22 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
  * @param delegate
  *            Callback interface for notifying the calling application when
  *            the request has received response
- * @return FBRequest
- *            Returns a pointer to the FBRequest object.
+ * @return FBSDKGraphRequest
+ *            Returns a pointer to the FBSDKGraphRequest object.
  */
-- (FBRequest *)requestWithGraphPath:(NSString *)graphPath
+- (FBSDKGraphRequest *)requestWithGraphPath:(NSString *)graphPath
                           andParams:(NSMutableDictionary *)params
                       andHttpMethod:(NSString *)httpMethod
                         andDelegate:(id<SocializeFBRequestDelegate>)delegate {
     [self updateSessionIfTokenUpdated];
     [self extendAccessTokenIfNeeded];
-    
-    FBRequest *request = [[FBRequest alloc] initWithSession:self.session
-                                                  graphPath:graphPath
-                                                 parameters:params
-                                                 HTTPMethod:httpMethod];
+	
+	
+	
+    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:graphPath parameters:params HTTPMethod:httpMethod];
     //handle delegate methods here as FBRequest no longer supports delegation
-    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+	
+	[request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
         if (error) {
             [delegate request:request didFailWithError:error];
         }
@@ -416,17 +414,17 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
     if (self.hasUpdatedAccessToken) {
         self.hasUpdatedAccessToken = NO;
         
-        // invalidate current session and create a new one with the same permissions
-        NSArray *permissions = self.session.accessTokenData.permissions;
-        [self.session close];
-        self.session = [[[FBSession alloc] initWithAppID:_appId
-                                             permissions:permissions
-                                         urlSchemeSuffix:_urlSchemeSuffix
-                                      tokenCacheStrategy:self.tokenCaching]
-                        autorelease];
-        
-        // get the session into a valid state
-        [self.session openWithCompletionHandler:nil];
+//        // invalidate current session and create a new one with the same permissions
+//        NSArray *permissions = self.session.accessTokenData.permissions;
+//        [self.session close];
+//        self.session = [[[FBSession alloc] initWithAppID:_appId
+//                                             permissions:permissions
+//                                         urlSchemeSuffix:_urlSchemeSuffix
+//                                      tokenCacheStrategy:self.tokenCaching]
+//                        autorelease];
+//        
+//        // get the session into a valid state
+//        [self.session openWithCompletionHandler:nil];
     }
 }
 

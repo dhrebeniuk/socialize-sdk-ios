@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Socialize, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SocializeFacebook.h"
 
 @interface SocializeFacebookAuthHandler : NSObject <SocializeFBSessionDelegate>
@@ -15,6 +15,7 @@
 - (void)authenticateWithAppId:(NSString*)appId
               urlSchemeSuffix:(NSString*)urlSchemeSuffix
                   permissions:(NSArray*)permissions
+ 				fromViewController:(UIViewController *)fromViewController
                       success:(void(^)())success
                    foreground:(void(^)())foreground
                       failure:(void(^)(NSError*))failure;

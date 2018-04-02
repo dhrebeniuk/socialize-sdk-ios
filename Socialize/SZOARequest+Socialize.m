@@ -8,8 +8,6 @@
 
 #import "SZOARequest+Socialize.h"
 #import "Socialize.h"
-//#import <JSONKit/JSONKit.h>
-#import <SZJSONKit/JSONKit.h>
 
 @implementation SZOARequest (Socialize)
 
@@ -47,7 +45,7 @@
                                                          parameters:parameters
                                                           multipart:NO
                                                             success:^(NSURLResponse *response, NSData *data) {
-                                                                NSDictionary *dictionary = [data objectFromJSONData];
+                                                                NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                                                 NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
                                                                 
                                                                 if (dictionary == nil || ![dictionary isKindOfClass:[NSDictionary class]]) {

@@ -8,7 +8,6 @@
 
 #import "SZOARequest+Twitter.h"
 #import "SZTwitterUtils.h"
-#import <SZJSONKit/JSONKit.h>
 
 @implementation SZOARequest (Twitter)
 
@@ -51,7 +50,8 @@
                                                          parameters:parameters
                                                           multipart:multipart
                                                             success:^(NSURLResponse *response, NSData *data) {
-                                                                BLOCK_CALL_1(success, [data objectFromJSONData]);
+																id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+																BLOCK_CALL_1(success, object);
                                                             }
                                                             failure:failure];
     

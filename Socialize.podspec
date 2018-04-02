@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "Socialize"
-  s.platform          = :ios, '7.0'
+  s.platform          = :ios, '9.0'
   s.version           = "3.1.3"
   s.summary           = "Socialize SDK for iOS devices."
   s.description       = "An iOS social sharing SDK for native apps. Learn more at http://getsocialize.com/"
@@ -9,13 +9,17 @@ Pod::Spec.new do |s|
   s.license           = { :type => 'MIT', :file => 'LICENSE' }
   s.author            = { "David Jedeikin" => "djedeikin@sharethis.com" }
   s.source            = { :git => "https://github.com/socialize/socialize-sdk-ios.git", :tag => "3.1.3" }
-  s.dependency        'Loopy'
-#  s.dependency        'Facebook-iOS-SDK', '4.10.0'
-#  s.dependency        'SZOAuthConsumer'
-#  s.dependency        'SZJSONKit'
+  s.dependency        'Loopy', '~> 1.1.3'
+  
+  s.dependency		'FBSDKCoreKit', '~> 4.31.1'
+  s.dependency		'FBSDKLoginKit', '~> 4.31.1'
+
+  s.dependency        'OAuthConsumer'
   s.dependency        'BlocksKit'
   s.dependency        'STTwitter', '0.2.6'
-  s.dependency        'Bolts', '1.8.4'
+  
+  s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security", "QuartzCore", "CoreGraphics", "UIKit", "Foundation", "AudioToolbox", "AdSupport"
+  
   s.resources         = 'Socialize/Resources/*.png','Socialize/Resources/*.xib','Socialize/Resources/*.plist','Socialize/Resources/*.htm'
   s.subspec 'no-arc' do |ss1|
     ss1.source_files = 'Socialize-noarc/**/*.{h,m}'

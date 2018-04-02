@@ -15,22 +15,11 @@
 @property (nonatomic, strong) NSURLConnection *connection;
 @property (nonatomic, strong) NSMutableData *data;
 @property (nonatomic, strong) OAMutableURLRequest *request;
-@property (nonatomic, strong) OAAsynchronousDataFetcher *fetcher;
+@property (nonatomic, retain) OADataFetcher *fetcher;
 @end
 
 @implementation SZOARequest
-@synthesize request = _request;
-@synthesize fetcher = _fetcher;
-@synthesize connection = _connection;
-@synthesize data = _data;
-@synthesize successBlock = _successBlock;
-@synthesize failureBlock = _failureBlock;
-@synthesize executing = _executing;
-@synthesize finished = _finished;
 
-- (void)dealloc {
-    
-}
 
 - (id)initWithConsumerKey:(NSString*)consumerKey
            consumerSecret:(NSString*)consumerSecret
@@ -61,22 +50,22 @@
         [self.request setHTTPShouldHandleCookies:NO];
 
         NSMutableArray *oaParams = [NSMutableArray arrayWithCapacity:[parameters count]];
-        [parameters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-            if ([obj conformsToProtocol:@protocol(NSFastEnumeration)]) {
-                for (id subobject in obj) {
-                    [oaParams addObject:[OARequestParameter requestParameterWithName:key value:subobject]];
-                }
-            } else {
-                [oaParams addObject:[OARequestParameter requestParameterWithName:key value:obj]];
-            }
-        }];
-        [self.request setOAParameters:oaParams multipart:multipart];
-        
-        self.fetcher = [[OAAsynchronousDataFetcher alloc] initWithRequest:self.request
-                                                                 delegate:self
-                                                        didFinishSelector:@selector(fetcherDidFinishWithTicket:data:)
-                                                          didFailSelector:@selector(fetcherDidFailWithTicket:error:)];
-        
+		[parameters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+			if ([obj conformsToProtocol:@protocol(NSFastEnumeration)]) {
+				for (id subobject in obj) {
+					[oaParams addObject:[OARequestParameter requestParameter:key value:subobject]];
+				}
+			} else {
+				[oaParams addObject:[OARequestParameter requestParameter:key value:obj]];
+			}
+		}];
+		 
+		[self.request setParameters:oaParams];
+		
+		
+		
+		self.fetcher = [[OADataFetcher alloc] init];
+		
         self.successBlock = success;
         self.failureBlock = failure;
     }
@@ -85,17 +74,17 @@
 }
 
 - (void)setExecuting:(BOOL)executing {
-    if (_executing != executing) {
+    if (self.executing != executing) {
         [self willChangeValueForKey:@"isExecuting"];
-        _executing = executing;
+        self.executing = executing;
         [self didChangeValueForKey:@"isExecuting"];
     }
 }
 
 - (void)setFinished:(BOOL)finished {
-    if (_finished != finished) {
+    if (self.finished != finished) {
         [self willChangeValueForKey:@"isFinished"];
-        _finished = finished;
+        self.finished = finished;
         [self didChangeValueForKey:@"isFinished"];
     }
 }
@@ -108,23 +97,9 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         self.executing = YES;
-        
-//        [self.request prepare];
-//        NSString *body = [[NSString alloc] initWithData:[self.request HTTPBody] encoding:NSASCIIStringEncoding];
-//        NSString *urlString = [[self.request URL] absoluteString];
-//        SDebugLog(2, @"----- Sending Request -----");
-//        SDebugLog(2, @"URL: %@", urlString);
-//        SDebugLog(2, @"Headers: %@", [[self request] allHTTPHeaderFields]);
-//        //        OAToken *token = [self.request token];
-//        //        SDebugLog(2, @"OAuth key: %@, OAuth secret: %@", self.token.key, self.token.secret);
-//        //        SDebugLog(2, @"Consumer key: %@, Consumer secret: %@", [SocializeRequest consumerKey], [SocializeRequest consumerSecret]);
-//        //        SDebugLog(2, @"Signature Base String: %@", [[self request] _signatureBaseString]);
-//        SDebugLog(2, @"Body: %@", body);
-//        //        SDebugLog(2, @"Params: %@", _paraams);
-//        SDebugLog(2, @"----- End Request ---------");
 
-        [self.fetcher start];
-        
+		[self.fetcher fetchDataWithRequest:self.request delegate:self didFinishSelector:@selector(fetcherDidFinishWithTicket:data:) didFailSelector:@selector(fetcherDidFailWithTicket:error:)];
+
 
     });
 }
@@ -133,7 +108,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         if ([self isExecuting]) {
             self.executing = NO;
-            [self.fetcher cancel];
+            self.fetcher = nil;
         }
 
         if (![self isFinished]) {

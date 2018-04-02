@@ -12,7 +12,6 @@
 #import <UIKit/UIKit.h>
 #import "NSString+UrlSerialization.h"
 #import "SocializeCommonDefinitions.h"
-#import <SZJSONKit/JSONKit.h>
 #import <Foundation/NSURLResponse.h>
 #import "SocializePrivateDefinitions.h"
 #import "SocializeConfiguration.h"
@@ -176,26 +175,6 @@ tokenRequest = _tokenRequest;
     return same;
 }
 
-/*
-+ (id)requestWithHttpMethod:(NSString *) httpMethod
-               resourcePath:(NSString*)resourcePath
-         expectedJSONFormat:(ExpectedResponseFormat)expectedJSONFormat
-                     object:(id<SocializeObject>)object
-              objectFactory:(SocializeObjectFactory*)objectFactory
-{
-    NSString *json =  [objectFactory createStringRepresentationOfObject:object]; 
-    NSMutableDictionary *params = [self generateParamsFromJsonString:json];
-
-    SocializeRequest *request = [[[SocializeRequest alloc]
-                                  initWithHttpMethod:httpMethod
-                                  resourcePath:resourcePath
-                                  expectedJSONFormat:expectedJSONFormat
-                                  params:params]
-                                 autorelease];
-    return request;
-}
- */
-
 - (id)initWithHttpMethod:(NSString *) httpMethod
             resourcePath:(NSString*)resourcePath
       expectedJSONFormat:(ExpectedResponseFormat)expectedJSONFormat
@@ -285,15 +264,16 @@ tokenRequest = _tokenRequest;
         if([self.params respondsToSelector:@selector(objectForKey:)])
             stringValue = (NSString *) [self.params objectForKey:@"jsonData"]; // TEMPORARY SOLUTION!!!!
         
-        if(stringValue == nil)
-            stringValue = [self.params  JSONString];
-        
-        [params addObject:[OARequestParameter requestParameterWithName:@"payload" value:stringValue]];          
-        [self.request setOAParameters:params];
-    }   
-    else if([self.httpMethod isEqualToString: @"GET"] || [self.httpMethod isEqualToString:@"DELETE"])
-    {
-        [self.request setOAParameters:[self formatUrlParams]];
+		if(stringValue == nil && self.params != nil) {
+			NSData *data = [NSJSONSerialization dataWithJSONObject:self.params options:0 error:nil];
+            stringValue = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+		}
+		
+        [params addObject:[OARequestParameter requestParameter:@"payload" value:stringValue]];
+		[self.request setParameters:params];
+    }
+    else if([self.httpMethod isEqualToString: @"GET"] || [self.httpMethod isEqualToString:@"DELETE"]) {
+        [self.request setParameters:[self formatUrlParams]];
     }
     
     [self.request prepare];
@@ -321,9 +301,7 @@ tokenRequest = _tokenRequest;
 
 - (SocializeDataFetcher*)dataFetcher {
     if (_dataFetcher == nil) {
-        _dataFetcher = [[SocializeDataFetcher alloc] initWithRequest:self.request delegate:self
-                                                   didFinishSelector:@selector(tokenRequestTicket:didFinishWithData:)
-                                                     didFailSelector:@selector(tokenRequestTicket:didFailWithError:)];
+		_dataFetcher = [[SocializeDataFetcher alloc] init];
         _dataFetcher.trustedHosts = [NSArray arrayWithObjects:@"stage.api.getsocialize.com", @"api.getsocialize.com", @"dev.getsocialize.com", nil];
     }
     
@@ -369,7 +347,7 @@ tokenRequest = _tokenRequest;
             SDebugLog(2, @"Params: %@", _params);
             SDebugLog(2, @"----- End Request ---------");
 
-            [self.dataFetcher start];
+			[self.dataFetcher fetchDataWithRequest:self.request delegate:self didFinishSelector:@selector(tokenRequestTicket:didFinishWithData:) didFailSelector:@selector(tokenRequestTicket:didFailWithError:)];
         });
     });
     

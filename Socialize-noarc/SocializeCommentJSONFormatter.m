@@ -26,7 +26,6 @@
  */
 
 #import "SocializeCommentJSONFormatter.h"
-#import <SZJSONKit/JSONKit.h>
 #import "SocializeComment.h"
 #import "SocializeObjectFactory.h"
 #import "SocializeEntityJSONFormatter.h"

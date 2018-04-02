@@ -8,7 +8,6 @@
 
 #import "SocializeObjectJSONFormatter.h"
 #import "SocializeObject.h"
-#import <SZJSONKit/JSONKit.h>
 
 
 @implementation SocializeObjectJSONFormatter

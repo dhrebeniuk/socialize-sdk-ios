@@ -181,7 +181,7 @@ void SZLinkAndGetPreferredNetworks(UIViewController *viewController, SZLinkConte
 
 void SZFBAuthWrapper( void (^success)(), void (^failure)(NSError *error)) {
     if (![SZFacebookUtils isLinked]) {
-        [SZFacebookUtils linkWithOptions:nil success:^(id _) {
+		[SZFacebookUtils linkWithOptions:nil fromViewController:nil success:^(id _) {
             BLOCK_CALL(success);
         } foreground:nil failure:^(NSError *error) {
             BLOCK_CALL_1(failure, error);

@@ -71,6 +71,7 @@ static SocializeFacebookAuthHandler *sharedFacebookAuthHandler;
 - (void)authenticateWithAppId:(NSString*)appId
               urlSchemeSuffix:(NSString*)urlSchemeSuffix
                   permissions:(NSArray*)permissions
+ 				fromViewController:(UIViewController *)fromViewController
                       success:(void(^)())success
                    foreground:(void(^)())foreground
                       failure:(void(^)(NSError*))failure {
@@ -81,7 +82,7 @@ static SocializeFacebookAuthHandler *sharedFacebookAuthHandler;
     self.successBlock = success;
     self.failureBlock = failure;
     self.foregroundBlock = foreground;
-    [self.facebook authorize:self.permissions];
+    [self.facebook authorize:self.permissions fromViewController:fromViewController];
 }
 
 - (BOOL)handleOpenURL:(NSURL*)url {

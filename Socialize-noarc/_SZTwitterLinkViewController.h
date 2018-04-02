@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SocializeBaseViewController.h"
 
-@class OAAsynchronousDataFetcher;
+@class OADataFetcher;
 @class OAToken;
 
 extern NSString *const SocializeTwitterRequestTokenURL;
@@ -23,7 +23,7 @@ extern NSString *const SocializeTwitterAuthCallbackScheme;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) OAToken *requestToken;
 @property (nonatomic, retain) OAToken *accessToken;
-@property (nonatomic, retain) OAAsynchronousDataFetcher *dataFetcher;
+@property (nonatomic, retain) OADataFetcher *dataFetcher;
 @property (nonatomic, copy) NSString *verifier;
 @property (nonatomic, copy) NSString *screenName;
 @property (nonatomic, copy) NSString *userID;

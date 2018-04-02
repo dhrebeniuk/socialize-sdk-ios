@@ -59,17 +59,14 @@ static NSString *const kTwitterAccessResponseUserID = @"user_id";
 }
 
 - (void)cancelAllCallbacks {
-    [self.dataFetcher cancel];
+	self.dataFetcher = nil;
     [self.socialize setDelegate:nil];
     [self.webView setDelegate:nil];
 }
 
 - (void)fetchDataWithRequest:(OAMutableURLRequest*)request didFinishSelector:(SEL)finish didFailSelector:(SEL)fail {
-    self.dataFetcher = [OAAsynchronousDataFetcher asynchronousFetcherWithRequest:request
-                                                                        delegate:self
-                                                               didFinishSelector:finish
-                                                                 didFailSelector:fail];
-    [self.dataFetcher start];
+	self.dataFetcher = [[OADataFetcher alloc] init];
+	[self.dataFetcher fetchDataWithRequest:request delegate:self didFinishSelector:finish didFailSelector:fail];
 }
 
 - (void)tryToCompleteOAuthProcess {
@@ -135,8 +132,8 @@ static NSString *const kTwitterAccessResponseUserID = @"user_id";
     
     // Set the callback url to our private scheme, so we can handle it in the webView:shouldStartLoadWithRequest:
     NSString *callbackURL = [NSString stringWithFormat:@"%@://sign-in-with-twitter", SocializeTwitterAuthCallbackScheme];
-    [request setOAuthParameterName:@"oauth_callback" withValue:callbackURL];
-    
+	[request setValue:callbackURL forHTTPHeaderField:@"oauth_callback"];
+	
     [self fetchDataWithRequest:request
                 didFinishSelector:@selector(requestRequestToken:didFinishWithData:)
                   didFailSelector:@selector(requestRequestToken:didFailWithError:)];

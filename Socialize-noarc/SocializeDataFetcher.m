@@ -46,6 +46,6 @@ const BOOL shouldAllowSelfSignedCert = YES;
 */
 -(void)dealloc{
     self.trustedHosts = nil;
-    [super dealloc];
+
 }
 @end

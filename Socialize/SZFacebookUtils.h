@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Socialize, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SocializeObjects.h"
 #import "SZFacebookLinkOptions.h"
 
@@ -23,7 +23,7 @@
 + (BOOL)isLinked;
 
 + (void)linkWithAccessToken:(NSString*)accessToken expirationDate:(NSDate*)expirationDate success:(void(^)(id<SZFullUser>))success failure:(void(^)(NSError *error))failure;
-+ (void)linkWithOptions:(SZFacebookLinkOptions*)options success:(void(^)(id<SZFullUser>))success foreground:(void(^)())foreground failure:(void(^)(NSError *error))failure;
++ (void)linkWithOptions:(SZFacebookLinkOptions*)options fromViewController:(UIViewController *)fromViewController success:(void(^)(id<SZFullUser>))success foreground:(void(^)())foreground failure:(void(^)(NSError *error))failure;
 + (void)unlink;
 + (void)cancelLink;
 

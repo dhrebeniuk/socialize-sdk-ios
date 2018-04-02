@@ -10,7 +10,6 @@
 #import "SocializeRequest.h"
 #import <OAuthConsumer/OAuthConsumer.h>
 #import <UIKit/UIKit.h>
-#import <SZJSONKit/JSONKit.h>
 #import "SocializePrivateDefinitions.h"
 #import "SocializeFullUser.h"
 #import "socialize_globals.h"
@@ -207,10 +206,9 @@ NSString *const IDFVKey = @"v";
     NSString *responseBody = [[NSString alloc] initWithData:data
                                                    encoding:NSUTF8StringEncoding];
     
-    
-    JSONDecoder *jsonKitDecoder = [JSONDecoder decoder];
-    id jsonObject = [jsonKitDecoder objectWithData:data];
-    
+	
+	id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
+	
     if ([jsonObject isKindOfClass:[NSDictionary class]]){
         
         NSString* token_secret = [jsonObject objectForKey:@"oauth_token_secret"];

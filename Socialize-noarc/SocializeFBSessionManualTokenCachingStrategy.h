@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#import "FBSessionTokenCachingStrategy.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 // SocializeFBSessionManualTokenCachingStrategy
 //
@@ -22,7 +22,7 @@
 // Internal use only, this class enables migration logic for the Facebook class, by providing
 // a means to directly provide the access token to a FBSession object
 //
-@interface SocializeFBSessionManualTokenCachingStrategy : FBSessionTokenCachingStrategy
+@interface SocializeFBSessionManualTokenCachingStrategy : NSObject
 
 // set the properties before instantiating the FBSession object in order to seed a token
 @property (readwrite, copy) NSString *accessToken;

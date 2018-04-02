@@ -26,16 +26,17 @@
 }
 
 - (void)cacheTokenInformation:(NSDictionary *)tokenInformation {
-    self.accessToken = [tokenInformation objectForKey:FBTokenInformationTokenKey];
-    self.expirationDate = [tokenInformation objectForKey:FBTokenInformationExpirationDateKey];
+//    self.accessToken = [tokenInformation objectForKey:FBTokenInformationTokenKey];
+//    self.expirationDate = [tokenInformation objectForKey:FBTokenInformationExpirationDateKey];
 }
 
 - (NSDictionary *)fetchTokenInformation;
 {
-    return [NSDictionary dictionaryWithObjectsAndKeys:
-            self.accessToken, FBTokenInformationTokenKey,
-            self.expirationDate, FBTokenInformationExpirationDateKey,
-            nil];
+	return @{};
+//    return [NSDictionary dictionaryWithObjectsAndKeys:
+//            self.accessToken, FBTokenInformationTokenKey,
+//            self.expirationDate, FBTokenInformationExpirationDateKey,
+//            nil];
 }
 
 - (void)clearToken

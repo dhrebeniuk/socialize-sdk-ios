@@ -10,7 +10,6 @@
 #import "SocializeObject.h"
 #import "SocializeObjectFactory.h"
 #import "SocializeObjects.h"
-#import <SZJSONKit/JSONKit.h>
 
 
 @implementation SocializeListFormatter

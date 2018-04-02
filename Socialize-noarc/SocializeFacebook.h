@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Socialize. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @protocol SocializeFBSessionDelegate;
 @protocol SocializeFBRequestDelegate;
@@ -24,13 +25,13 @@
               urlSchemeSuffix:(NSString *)urlSchemeSuffix
                   andDelegate:(id<SocializeFBSessionDelegate>)delegate;
 
-- (void)authorize:(NSArray *)permissions;
+- (void)authorize:(NSArray *)permissions fromViewController:(UIViewController *)fromViewController;
 
 - (BOOL)handleOpenURL:(NSURL *)url;
 
 - (void)extendAccessToken;
 
-- (FBRequest *)requestWithGraphPath:(NSString *)graphPath
+- (FBSDKGraphRequest *)requestWithGraphPath:(NSString *)graphPath
                           andParams:(NSMutableDictionary *)params
                       andHttpMethod:(NSString *)httpMethod
                         andDelegate:(id<SocializeFBRequestDelegate>)delegate;
@@ -99,21 +100,21 @@ enum {
 /**
  * Called just before the request is sent to the server.
  */
-- (void)requestLoading:(FBRequest *)request;
+- (void)requestLoading:(FBSDKGraphRequest *)request;
 
 /**
  * Called when the Facebook API request has returned a response.
  *
  * This callback gives you access to the raw response. It's called before
- * (void)request:(FBRequest *)request didLoad:(id)result,
+ * (void)request:(FBSDKGraphRequest *)request didLoad:(id)result,
  * which is passed the parsed response object.
  */
-- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response;
+- (void)request:(FBSDKGraphRequest *)request didReceiveResponse:(NSURLResponse *)response;
 
 /**
  * Called when an error prevents the request from completing successfully.
  */
-- (void)request:(FBRequest *)request didFailWithError:(NSError *)error;
+- (void)request:(FBSDKGraphRequest *)request didFailWithError:(NSError *)error;
 
 /**
  * Called when a request returns and its response has been parsed into
@@ -123,16 +124,16 @@ enum {
  * on the format of the API response. If you need access to the raw response,
  * use:
  *
- * (void)request:(FBRequest *)request
+ * (void)request:(FBSDKGraphRequest *)request
  *      didReceiveResponse:(NSURLResponse *)response
  */
-- (void)request:(FBRequest *)request didLoad:(id)result;
+- (void)request:(FBSDKGraphRequest *)request didLoad:(id)result;
 
 /**
  * Called when a request returns a response.
  *
  * The result object is the raw response from the server of type NSData
  */
-- (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data;
+- (void)request:(FBSDKGraphRequest *)request didLoadRawResponse:(NSData *)data;
 
 @end
